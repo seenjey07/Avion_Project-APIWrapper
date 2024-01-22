@@ -1,24 +1,25 @@
-# README
+# Random Dog Fact App #
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to the Random Dog Fact App! 
+This simple web application fetches random dog facts from the Dog Facts API and displays them on the page. 
+Users can refresh the page to get a new, interesting piece of information about dogs.
 
-Things you may want to cover:
+# Features
 
-* Ruby version
+- Fetches random dog facts from the Dog Facts API.
+- Allows users to get a new fact by refreshing the page or clicking the button to get new facts.
 
-* System dependencies
+## Development
 
-* Configuration
+# Dog Facts Service
+ - The DogFactsService class in 'app/api/dog_facts_service.rb' handles interactions with the Dog Facts API.
 
-* Database creation
+# UI Modification
+ - To modify the user interface, update the view in 'app/views/application/index.html.erb'.
 
-* Database initialization
+# Adding New Features
+ - Feel free to contribute new features or improvements. Create a branch, make your changes, and submit a pull request.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Acknowledgments
+  - Dog Facts API: 'https://dogapi.dog/api/v2'
+  - Inspired by the love for dogs and the desire to share interesting facts!
