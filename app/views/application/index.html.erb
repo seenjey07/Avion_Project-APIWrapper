@@ -1,0 +1,14 @@
+
+<div class="container">
+
+  <%= image_tag("DogImage.jpg", alt: "Dog Image", class:"dog-image") %>
+
+  <h2>Random Dog Fact</h2>
+
+    <p class="did-you-know">Did you know?</p>
+      <div class= "fact-container">
+        <p class="dog-fact"><%= @dog_facts %></p>
+      </div>
+
+  <%= link_to "Get New Fact", root_path, id: "new-fact-button" %>
+</div>
