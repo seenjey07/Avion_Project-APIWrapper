@@ -1,13 +1,13 @@
 
 <div class="container">
 
-  <%= image_tag("Random.jpg", alt: "RandomImage", class:"random-image") %>
+  <%= image_tag("UselessThing.png", alt: "UselessWateringCan-Image", class:"uselessfact-image") %>
 
   <h2>Useless Facts</h2>
 
     <p class="did-you-know">Did you know?</p>
       <div class= "fact-container">
-        <p class="useless-fact"><%= @useless_facts %></p>
+        <p class="useless-fact"><%= @useless_fact %></p>
       </div>
 
   <%= link_to "Get New Fact", useless_facts_path, id: "new-fact-button" %>

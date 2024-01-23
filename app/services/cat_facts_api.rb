@@ -4,8 +4,6 @@ class CatFactsApi
 
   def self.get_random_fact
     response = get("/facts")
-    puts "Response: #{response.inspect}"
-
     random_index = rand(response.parsed_response.length)
     cat_fact = response.parsed_response[random_index]['text']
     return cat_fact

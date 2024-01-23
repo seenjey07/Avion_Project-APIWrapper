@@ -1,5 +1,9 @@
 @import 'bootstrap';
 
+body {
+  overflow-y: hidden;
+}
+
 .home-logo-container {
   display: flex;
   align-items: center;
@@ -32,14 +36,24 @@
   padding: 5px;
 }
 
-.dog-image {
+.dog-image{
   width: 200px;
   height: 150px;
 }
 
 .cat-image {
   width: 200px;
+  height: 200px;
+}
+
+.uselessfact-image {
+  width: 300px;
   height: 150px;
+}
+
+.laugh-image {
+  width: 250px;
+  height: 200px;
 }
 
 h2 {
@@ -69,10 +83,12 @@ footer,
 }
 
 .dog-fact,
-.cat-fact {
+.cat-fact,
+.useless-fact, 
+.jokes {
   font-size: 18px;
   font-family: Helvetica;
-  color: brown;
+  color: rgb(189, 54, 54);
   border: 1px double burlywood;
   font-weight: bold;
   padding: 10px;
@@ -81,7 +97,15 @@ footer,
 }
 
 .cat-fact {
-  color: blueviolet;
+  color: forestgreen;
+}
+
+.useless-fact {
+  color: rgb(209, 153, 10);
+}
+
+.joke {
+  color: rgb(67, 67, 233);
 }
 
 #new-fact-button {

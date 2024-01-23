@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   end
 
   def useless_facts
-    @useless_facts = UselessFactsApi.get_random_fact
+    @useless_fact = UselessFactsApi.get_random_fact
   end
 
   def jokes
