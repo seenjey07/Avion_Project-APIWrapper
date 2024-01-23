@@ -16,6 +16,8 @@ gem "puma", ">= 5.0"
 
 gem 'httparty'
 
+gem 'bootstrap', '~> 5.1'
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
@@ -45,6 +47,11 @@ gem "bootsnap", require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
+
+group :assets do
+  gem 'sassc-rails', '2.1.2'
+  gem 'dartsass-sprockets', '~> 3.1.0'
+end
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

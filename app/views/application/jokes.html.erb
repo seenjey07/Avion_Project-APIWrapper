@@ -1,0 +1,13 @@
+
+<div class="container">
+
+  <%= image_tag("Laugh.jpg", alt: "LaughingImage", class:"laugh-image") %>
+
+  <h2>Time for Laughs</h2>
+
+      <div class= "fact-container">
+        <p class="jokes"><%= @jokes %></p>
+      </div>
+
+  <%= link_to "Get New Fact", jokes_path, id: "new-fact-button" %>
+</div>

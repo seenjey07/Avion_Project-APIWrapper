@@ -6,9 +6,6 @@ class DogFactsService
     response = get("/facts.json")
     fact = response.parsed_response["data"].first["attributes"]["body"]
 
-    Rails.logger.info("API Response: #{response.inspect}")
-    Rails.logger.info("Random Dog Fact: #{fact}")
     fact
-
   end
 end

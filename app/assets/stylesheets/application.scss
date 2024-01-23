@@ -1,5 +1,17 @@
-body {
-  overflow: hidden;
+@import 'bootstrap';
+
+.home-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  margin: auto;
+  overflow-y: hidden;
+}
+
+.random-logo {
+  width: 400px;
+  height: 300px;
 }
 
 .container {
@@ -25,13 +37,26 @@ body {
   height: 150px;
 }
 
+.cat-image {
+  width: 200px;
+  height: 150px;
+}
+
 h2 {
   color: #e63030;
   font-size: 30px;
   font-family: Helvetica;
   padding-top: 0;
   margin-top: 0;
+  font-weight: bold;
 }
+
+footer,
+.navbar-brand,
+.nav-link {
+  color: white;
+}
+
 
 .did-you-know {
   font-size: 19px;
@@ -43,7 +68,8 @@ h2 {
   padding: 0;
 }
 
-.dog-fact {
+.dog-fact,
+.cat-fact {
   font-size: 18px;
   font-family: Helvetica;
   color: brown;
@@ -52,6 +78,10 @@ h2 {
   padding: 10px;
   margin: 0 0 25px;
   text-align: center;
+}
+
+.cat-fact {
+  color: blueviolet;
 }
 
 #new-fact-button {
