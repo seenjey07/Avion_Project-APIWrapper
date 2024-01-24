@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   end
 
   def dog_facts
-    @dog_facts = DogFactsService.get_random_fact
+    @dog_fact = DogFactsService.get_random_fact
   end
 
   def cat_facts
@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
   end
 
   def jokes
-    @jokes = JokesApi.get_random_fact
+    @joke = JokesApi.get_random_fact
   end
 
 end
