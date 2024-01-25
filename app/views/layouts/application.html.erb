@@ -7,16 +7,15 @@
 
     <%= javascript_importmap_tags %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3O6D5q3lDcRPt70zZL6bEAQndj/Cvj+o4oW4aQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></script>
 
   </head>
-  <body class="d-flex flex-column min-vh-100">
+  <body class="d-flex flex-column max-vh-100">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
     <div class="container-fluid">
           <a class="navbar-brand" href="/">What?? That's so Random</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
@@ -36,14 +35,14 @@
         </div>
       </nav>
 
-    <div>
+    <div class="flex-grow-1">
       <%= yield %>
     </div>
 
   </body>
 
-  <footer class="footer d-flex flex-column mt-auto bg-dark">
-    <div class="text-center bottom">
+  <footer class="footer bg-dark">
+    <div class="text-center">
       <p>&copy; <%= Time.now.year %> What?? That's so Random</p>
     </div>
   </footer>
